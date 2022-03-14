@@ -11,10 +11,12 @@
 
 
 class Unit:
-    def __init__(self, field: Field(), state: str, speed: int):
+    def __init__(self, field: Field(), state: str, speed: int, x_coord: int, y_coord: int):
         self.field = field
         self.state = state
         self.speed = speed
+        self.x = x_coord
+        self.y = y_coord
 
 
     def move(self, direction):
